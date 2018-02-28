@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Teknik Değerlendirme</h2>
+
+<p id="demo"></p>
+
+<script>
+
+var n = prompt("kaç elemanlı bir dizi:");
+var a = [] ;
+var sonuc = 1;
+    
+for (i=0; i<n; i++){
+  a[i] = prompt("dizi "+[i]+ " değerini gir");
+  sonuc*= a[i];
+}
+
+function carp(a) {
+var b = [a.length]
+
+for( i=0; i < a.length; i++){
+   b[i] = sonuc / a[i]; 
+} 
+  document.write(" b dizisi"+ b );
+}
+  document.write("a dizisi " + a);
+  carp(a);
+  
+    
+    
+  /*  istersen  kendi örneğine manuel olarak bakabilirsin
+var a =[1,9,2,7];
+   var sonuc=1;
+   for (i = 0; i < a.length; i++){
+  sonuc*= a[i];
+   }
+
+  var b = [a.length];
+  for( i=0; i < a.length; i++){
+   b[i] = sonuc / a[i]; 
+  }
+   document.write(b);
+   */
+    
+</script>
+
+</body>
+</html>
